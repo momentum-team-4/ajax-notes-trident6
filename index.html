@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Notes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="moment.min.js" async></script>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+    <title>Travel Log</title>
 </head>
-<body>
-  
+
+<body class="sans-serif">
+    <div class="mw8 pa1 center tc">
+        <h1 class="tc mt2 mb3">Where have you been today?</h1>
+        <!-- <form id="new-log-form"> -->
+
+        <div id="review_input">
+            <textarea id="note" placeholder="enter a review" rows='5' cols='40' required></textarea>
+
+            <!-- <div class="mv3"> -->
+            <div>
+                <button id="submit" class="f3 grow br3 ph3 pv2 mb2 white bg-dark-blue pointer">Record Review</button>
+            </div>
+        </div>
+
+        </form>
+
+        <div id="ratings" class="mw7 center">
+        </div>
+    </div>
 </body>
+
 </html>
